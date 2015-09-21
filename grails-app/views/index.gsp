@@ -82,6 +82,8 @@
 	</head>
 	<body>
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+		
+		<!-- 
 		<div id="status" role="complementary">
 			<h1>Application Status</h1>
 			<ul>
@@ -97,24 +99,45 @@
 			</ul>
 			<h1>Installed Plugins</h1>
 			<ul>
+				
+				
+				
 				<g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
 					<li>${plugin.name} - ${plugin.version}</li>
 				</g:each>
+				
+				
+				
 			</ul>
 		</div>
+		
+		 -->
 		<div id="page-body" role="main">
-			<h1>Welcome to Grails</h1>
-			<p>Congratulations, you have successfully started your first Grails application! At the moment
-			   this is the default page, feel free to modify it to either redirect to a controller or display whatever
-			   content you may choose. Below is a list of controllers that are currently deployed in this application,
-			   click on each to execute its default action:</p>
+			<h1>SisOuvidoria</h1>
+			<p>Bemvindo ao projeto de gerenciamento de ouvidoria.</p>
 
 			<div id="controller-list" role="navigation">
-				<h2>Available Controllers:</h2>
+				<h2>Controllers Disponiveis:</h2>
 				<ul>
+					
+					<!-- 
 					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
 						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
 					</g:each>
+					
+					 -->
+					 
+					 <td><li class="controller"><g:link controller="manifestante">Manisfestante</g:link></li></td>
+					 
+					 <td><li class="controller"><g:link controller="endereco">Endereco</g:link></li></td>					 
+
+					 <td><li class="controller"><g:link controller="assunto">Assunto</g:link></li></td>
+					 
+					 <td><li class="controller"><g:link controller="status">Status</g:link></li></td>
+					 
+					 <td><li class="controller"><g:link controller="manifesto">Manifesto</g:link></li></td>
+					 
+					 <td><li class="controller"><g:link controller="resposta">Resposta</g:link></li></td>
 				</ul>
 			</div>
 		</div>
