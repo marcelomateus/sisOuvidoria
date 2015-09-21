@@ -84,6 +84,8 @@
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		
 		<!-- 
+		
+		
 		<div id="status" role="complementary">
 			<h1>Application Status</h1>
 			<ul>
@@ -112,6 +114,8 @@
 		</div>
 		
 		 -->
+		 
+		 
 		<div id="page-body" role="main">
 			<h1>SisOuvidoria</h1>
 			<p>Bemvindo ao projeto de gerenciamento de ouvidoria.</p>
@@ -120,12 +124,15 @@
 				<h2>Controllers Disponiveis:</h2>
 				<ul>
 					
-					<!-- 
+					<!-- COMENTARIO
+					
 					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
 						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
 					</g:each>
 					
-					 -->
+					 FIM COMENTARIO-->
+					 
+					 
 					 
 					 <td><li class="controller"><g:link controller="manifestante">Manisfestante</g:link></li></td>
 					 
